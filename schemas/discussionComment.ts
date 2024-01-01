@@ -4,23 +4,21 @@ export default {
   title: 'Discussion Comment',
   fields: [
     {
-      name: 'name',
+      name: 'comment',
       type: 'string',
-      title: 'Name',
+      title: 'Comment',
     },
     {
-      name: 'discussion',
-      type: 'document',
-      fields: [
-        {
-          name: 'discussion',
-          title: 'Discussion',
-          type: 'reference',
-          weak: true,
-          to: [{type: 'discussion'}],
-          description: '',
-        },
-      ],
+      name: 'commentDiscussion',
+      title: 'Dicussion',
+      type: 'reference',
+      to: [{type: 'discussion'}],
+      description: '',
+    },
+    {
+      name: 'username',
+      type: 'string',
+      title: 'Username',
     },
   ],
 }

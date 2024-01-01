@@ -14,18 +14,11 @@ export default {
       title: 'Image',
     },
     {
-      name: 'sort',
-      type: 'document',
-      fields: [
-        {
-          name: 'sort',
-          title: 'Sort',
-          type: 'reference',
-          weak: true,
-          to: [{type: 'sort'}],
-          description: 'The sort duh',
-        },
-      ],
+      name: 'sortOptionSort',
+      title: 'Sort',
+      type: 'reference',
+      to: [{type: 'sort'}],
+      description: '',
     },
   ],
 }

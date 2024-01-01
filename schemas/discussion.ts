@@ -9,18 +9,12 @@ export default {
       title: 'Name',
     },
     {
-      name: 'sort',
-      type: 'document',
-      fields: [
-        {
-          name: 'sort',
-          title: 'Sort',
-          type: 'reference',
-          weak: true,
-          to: [{type: 'sort'}],
-          description: '',
-        },
-      ],
+      name: 'discussionSort',
+      title: 'Sort',
+      type: 'reference',
+      weak: true,
+      to: [{type: 'sort'}],
+      description: '',
     },
   ],
 }
